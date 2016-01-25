@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>login screen</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="App/css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="wrapper" ng-app="myapp" ng-controller='myctrl'>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form class="form" method="post">
+			<input ng-model="user.username" type="text" >
+			<input ng-model="user.password" type="password">
+			<button ng-click="loginuser()" ng-model="user.submit" type="submit" id="login-button">Login</button>
+			<button ng-model="register" type="submit" id="register-button">Register</button>
+		</form>
+	</div>
+	
+</div>
+        <script src="App/js/index.js"></script>
+	<script src="App/js/app.js"></script>
+  </body>
+</html>
